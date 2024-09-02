@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{ 
+            width:700px;
+            height:700px;
+            background-color: rgb(201, 201, 201);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        h3{
+            text-align: center;
+        }
+        input{
+            display: none;
+        }
+        label{
+            text-align: center;
+            background-color: rgb(102, 76, 218);
+            padding:10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .total{
+            width:100%;
+            height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="card">
+            <video id="video-pro" width="100" height="600" loop controls></video>
+            <h3>Saisurya</h3>
+            <label for="upload-btn">Upadate video</label>
+            <input type="file" accept="mp4,webm" id="upload-btn">
+        </div>    
+    </div>
+    
+    <script>
+        let profilevid = document.getElementById('video-pro');
+        let inputfile = document.getElementById('upload-btn');
+
+        inputfile.onchange = function(){
+            profilevid.src= URL.createObjectURL(inputfile.files[0]);
+        }
+    </script>
+</body>
+</html>
