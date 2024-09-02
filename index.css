@@ -255,8 +255,4 @@ body{
     }
 }
 
-@media(max-width:375px){
-    #video-pro{
-        aspect-ratio: 2/4;
-    }
-}
+
