@@ -81,11 +81,11 @@ body{
     color: var(--white-color) !important;
 }
 .nav-link.active{
-    color: var(--hover-color) !important;
+    color: var(--ternary-color) !important;
 }
 
 .nav-link:hover{
-    color:var(--hover-color)! important;
+    color:var(--ternary-color)! important;
 }
 
 /* Hero-section */
@@ -183,7 +183,7 @@ body{
  
 
     .nav-link:hover{
-        color:var(--hover-color)! important;
+        color:var(--ternary-color)! important;
     }
     .hero-img{
         width:390px;
