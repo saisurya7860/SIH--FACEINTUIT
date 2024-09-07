@@ -96,15 +96,40 @@
     <section  id="analysis">
         <div id="container">
           <div class="analysis-container">
-            <video id="video-pro" width="80%" height="100%" controls></video>
-            <label id="upload-label" for="upload-btn">Upload video</label>
-            <input type="file" accept="video/mp4,video/webm" id="upload-btn">
+            
+
+            <div class="upload-base">
+              <label class="upload-btn" for="videoUpload" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16" id="uploadIcon">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                </svg>
+            
+                <p id="uploadText" class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                  <span class="font-semibold">Click to upload</span> or drag and drop
+                </p>
+                <p id="uploadFormats" class="text-xs text-gray-500 dark:text-gray-400">MP4, AVI, MOV, or MKV (MAX. 100MB)</p>
+            
+                <video id="uploadedVideo" controls style="display: none; ">
+                  Your browser does not support the video tag.
+                </video>
+              </label>
+              <input type="file" id="videoUpload" accept="video/*" style="display: none;" />
+            </div>
+
+     
           </div>
         </div>
     </section>
 
   </main>
 
+
+
+
+
+  <footer>
+    
+  </footer>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -127,14 +152,29 @@
                 // Add the 'active' class to the clicked link
                 link.classList.add('active');
               } // nav-links active
-                
-              // analysis video input from user
-              let profilevid = document.getElementById('video-pro');
-              let inputfile = document.getElementById('upload-btn');
 
-              inputfile.onchange = function(){
-                  profilevid.src= URL.createObjectURL(inputfile.files[0]);
-              }
+              const uploadBtn = document.getElementsByClassName('upload-btn');
+              const videoUpload = document.getElementById('videoUpload');
+              const uploadedVideo = document.getElementById('uploadedVideo');
+              const uploadIcon = document.getElementById('uploadIcon');
+              const uploadText = document.getElementById('uploadText');
+              const uploadFormats = document.getElementById('uploadFormats');
+
+              videoUpload.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                  const videoURL = URL.createObjectURL(file);
+                  uploadedVideo.src = videoURL;
+                  uploadedVideo.style.display = 'block';
+
+                  // Hide upload instructions after video upload
+                  uploadIcon.style.display = 'none';
+                  uploadText.style.display = 'none';
+                  uploadFormats.style.display = 'none';
+l
+                  uploadBtn.style.padding = '';
+                }
+              });
 
           </script>
 </body>

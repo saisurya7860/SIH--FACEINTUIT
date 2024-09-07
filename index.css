@@ -12,7 +12,7 @@ html{
 
 
 body{
-    background: radial-gradient(circle, rgba(20,20,30,1) 0%, rgba(0,0,10,1) 80%);    
+    background: radial-gradient(circle, rgba(20,20,30,1) 0%, rgba(0,0,10,1) 80%);  
     height: 100vh;
 }
 
@@ -195,23 +195,42 @@ body{
     padding:10rem 0;
 }
 
-#upload-label{
-    padding: 0.5rem 1rem; 
-    border-radius: 25px;
-    border: 1px solid var(--hover-color);
-    color: var(--white-color);
-    background-color: var(--btn-color);
-    cursor: pointer;
-}
-
-#video-pro{
-   background-color: var(--black-color);
-   aspect-ratio:8/4;
-   margin-bottom: 2rem;
-}
-
-#upload-btn{
+.video-base{
     display: none;
+}
+
+#uploadedVideo{
+    aspect-ratio: 4/3;
+    width: 100%;
+}
+.upload-base{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.upload-btn{
+    padding: 4rem 8rem;
+    background-color: transparent;
+    border: 2px dashed #f0f0f0a7;
+    border-radius: 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.upload-btn svg{
+    width: 4rem;
+    color: #ffffff46;
+    stroke-width: 1px;
+}
+.upload-btn p{
+    color: #ffffffc9;
+}
+#uploadText{
+    text-wrap: nowrap;
 }
 
 /* Media Query */
@@ -277,8 +296,13 @@ body{
         width:500px;
         height:400px;
     }
-    #video-pro{
-        aspect-ratio: 6/4;
+
+    #uploadedVideo{
+        aspect-ratio: 12/11;
+        width: 100%;
+    }
+    .upload-btn{
+        padding:4rem 6rem;
     }
 }
 
@@ -290,8 +314,12 @@ body{
         width:300px;
         height:300px;
     }
-    #video-pro{
-        aspect-ratio: 5/5;
+    #uploadedVideo{
+        aspect-ratio: 10/9;
+        width: 100%;
+    }
+    .upload-btn{
+        padding:1rem;
     }
 }
 
