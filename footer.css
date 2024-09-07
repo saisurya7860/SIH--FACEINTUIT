@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    background: radial-gradient(circle, rgb(2, 6, 40,3) 10%, rgb(0, 0, 23,9) 80%);  
+    height: 100vh;
+    color:#fff;
+}
+
+    /* Colors */
+
+:root {
+    --white-color :#fff;
+    --black-color:#000;
+    --hover-color:rgb(24, 168, 232);
+    --primary-color: rgb(36, 64, 153);
+    --secondary-color :rgb(37, 99, 235);
+    --ternary-color:rgb(28, 128, 239);
+    --btn-color:rgb(4, 4, 8);
+    --para-color:rgb(123, 124, 127);
+}
+
+    /* Typography */
+
+:root{
+    /* Font- size */
+    --ft-xsm-size:0.8rem;
+    --ft-sm-size:1rem;
+    --ft-nor-size:1.2rem;
+    --ft-md-size:1.5rem;
+    --ft-lg-size:2.2rem;
+    --ft-xlg-size:3rem;
+    /* Font- weight */
+    --ft-sm-wt:600;
+    --ft-md-wt:700;
+    --ft-lg-wt:800;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 10, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(24, 168, 232), rgb(28, 128, 239), rgb(37, 99, 235), rgb(36, 64, 153));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgb(36, 64, 153), rgb(37, 99, 235), rgb(28, 128, 239), rgb(24, 168, 232));
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 10, 1);
+}
+
+
+
+
+/* Footer */
+
+footer{
+    background: #000;
+}
