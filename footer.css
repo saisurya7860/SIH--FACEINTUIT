@@ -11,10 +11,12 @@ html{
 
 
 
+
+
+
 body{
     background: radial-gradient(circle, rgb(2, 6, 40,3) 10%, rgb(0, 0, 23,9) 80%);  
     height: 100vh;
-    color:#fff;
 }
 
     /* Colors */
@@ -74,5 +76,64 @@ body{
 /* Footer */
 
 footer{
-    background: #000;
+    background: #121212;
+    color: var(--white-color);
+}
+
+.footer-logo{
+    width:1.7rem;
+    height:2rem;
+}
+
+#web-logo-div{
+    display: flex;
+    align-items: center;
+}
+
+.web-title{
+    font-size: var(--ft-lg-size);
+    font-weight: var(--ft-md-wt);
+}
+
+
+.web-title span{
+    color:var(--ternary-color);
+}
+
+.logo-des{
+    font-size: var(--ft-sm-size);
+    padding:1.5rem 0;
+    max-width:200px;
+}
+
+.col-2-title{
+    font-size: var(--ft-md-size);
+    
+}
+
+.underline{
+    width:100px;
+    height:1.5px;
+    background-color: var(--ternary-color);
+}
+
+.ft-links{
+    font-size: var(--ft-sm-size);
+    line-height: 30px;
+}
+
+.ft-mail{
+    color:var(--white-color);
+}
+
+#socio-icon:hover{
+    color:var(--ternary-color);
+}
+
+.copy-right{
+    font-size: var(--ft-xsm-size);
+}
+
+.copy-right span{
+    color:var(--ternary-color); 
 }

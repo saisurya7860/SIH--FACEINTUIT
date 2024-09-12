@@ -82,7 +82,8 @@ body{
 #logo{
     font-size: var(--ft-lg-size);
     font-weight: var(--ft-md-wt);
-    color:var(--white-color)
+    color:var(--white-color);
+    cursor: pointer;
 }
 
 #logo span{
