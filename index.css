@@ -222,6 +222,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    cursor: pointer;
 }
 .upload-btn svg{
     width: 4rem;

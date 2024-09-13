@@ -122,12 +122,16 @@ footer{
     line-height: 30px;
 }
 
+.next-page:hover{
+    color:var(--ternary-color) !important;
+}
+
 .ft-mail{
     color:var(--white-color);
 }
 
 #socio-icon:hover{
-    color:var(--ternary-color);
+    color:var(--ternary-color)!important;
 }
 
 .copy-right{
