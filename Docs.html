@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Docs</title>
+
+    <link rel="stylesheet" href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="Docs.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo_SoC.png">  
+    
+    <script>
+        //create an XMLHttpRequest
+        const xhttp = new XMLHttpRequest(); 
+    
+        //define a callback function
+        xhttp.onload = function footer(){
+          document.getElementById('footer').innerHTML = this.responseText;
+        }
+    
+        // sending request to the server
+        xhttp.open("GET","footer.html");
+        xhttp.send();
+      </script>
+    
+</head>
+<body>
+    
+    <section class= "container">
+        <div class="text-center" id="docs-title">Insights of <span>Face</span><span>Intuit</span></div>
+        
+        <div class= "row text-light fs-5 text-justify">
+
+            <div class="col col-md-6 col-12 py-2">
+                <p>
+                    • We have develop a deep fake forensic analyzer 
+                    software using a multi-models that combines CNNs for 
+                    facial feature analysis, RNNs for temporal consistency 
+                    and audio visual sync checks.
+                </p>
+                
+                <p>
+                    • Integrate blockchain to secure the authenticity of 
+                    media content.The software Provides a detailed report highlighting 
+                    anomalies and the deep fake creation methods. 
+                </p>
+               
+            </div>
+
+            <div class="col col-md-6 col-12 py-2 ">
+                <p>
+                    • We have develop a deep fake forensic analyzer 
+                    software using a multi-models that combines CNNs for 
+                    facial feature analysis, RNNs for temporal consistency 
+                    and audio visual sync checks.
+                </p>
+                
+                <p>
+                    • Integrate blockchain to secure the authenticity of 
+                    media content.The software Provides a detailed report highlighting 
+                    anomalies and the deep fake creation methods. 
+                </p>
+            </div>
+
+            <div class="col col-md-6 col-12 py-2">
+                <p>
+                    • Adversarial training with GANs enhances detection 
+                    accuracy.Deploy This Software has cloud-based service for real 
+                    time deep fake authentication
+                </p>
+
+                <p>
+                    • Integrate blockchain to secure the authenticity of 
+                    media content.The software Provides a detailed report highlighting 
+                    anomalies and the deep fake creation methods. 
+                </p>
+                
+            </div>
+
+            <div class="col col-md-6 col-12 py-2">
+                <p>
+                    • Adversarial training with GANs enhances detection 
+                    accuracy.Deploy This Software has cloud-based service for real 
+                    time deep fake authentication
+                </p>
+
+                <p>
+                    • Integrate blockchain to secure the authenticity of 
+                    media content.The software Provides a detailed report highlighting 
+                    anomalies and the deep fake creation methods. 
+                </p>
+
+            </div>
+
+            <div class="col col-md-6 col-12 py-2">
+                <p>
+                    • Adversarial training with GANs enhances detection 
+                    accuracy.Deploy This Software has cloud-based service for real 
+                    time deep fake authentication
+                </p>
+
+                <p>
+                    • Integrate blockchain to secure the authenticity of 
+                    media content.The software Provides a detailed report highlighting 
+                    anomalies and the deep fake creation methods. 
+                </p>
+
+            </div>
+
+            <div class="col col-md-6 col-12 py-2">
+                <p>
+                    • Adversarial training with GANs enhances detection 
+                    accuracy.Deploy This Software has cloud-based service for real 
+                    time deep fake authentication
+                </p>
+
+                <p>
+                    • Integrate blockchain to secure the authenticity of 
+                    media content.The software Provides a detailed report highlighting 
+                    anomalies and the deep fake creation methods. 
+                </p>
+
+            </div>
+
+        </div>    
+    </section>
+
+    <!-- Documents of faceintuit -->
+
+    <section class="video-def">
+        <div class="container d-flex align-items-center justify-content-center " >
+            <div class="video-con  d-flex justify-content-center align-items-center">
+                <video  src="images/Sai .mp4" controls class="docs-video"></video>
+            </div>  
+        </div>
+    </section>
+
+       
+    <footer id = "footer"></footer>
+
+</body>
+</html>
