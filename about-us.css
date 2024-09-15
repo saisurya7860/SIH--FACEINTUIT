@@ -10,10 +10,6 @@ html{
 }
 
 
-
-
-
-
 body{
     background: radial-gradient(circle, rgb(2, 6, 40,3) 10%, rgb(0, 0, 23,9) 80%);  
     height: 100vh;
@@ -70,4 +66,47 @@ body{
     background: rgba(0, 0, 10, 1);
 }
 
+/* About us */
 
+
+.about-us-title{
+    color: var(--ternary-color);
+    font-size: var(--ft-lg-size);
+    font-weight: var(--ft-md-wt);
+    padding: 2rem 0;
+}
+
+.total-div-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+#card{
+    width:18rem;
+    background-color: rgb(31, 31, 31,0.8);
+    border-radius: 7px;
+}
+
+#card-img{
+    width:18rem;
+    height:17rem;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#card-des{
+    padding:2rem 1rem;
+}
+
+
+
+.about-us-socio-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+}
