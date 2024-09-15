@@ -81,6 +81,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    flex-basis: max-content max-content max-content;
     gap: 3rem;
     
 }
@@ -101,8 +102,6 @@ body{
 #card-des{
     padding:2rem 1rem;
 }
-
-
 
 .about-us-socio-links{
     display: flex;
