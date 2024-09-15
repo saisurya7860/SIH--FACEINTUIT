@@ -147,15 +147,13 @@ body{
 .hero-subtitle{
     font-size: var(--ft-lg-size);
     font-weight: var(--ft-sm-wt);
-    color: var(--ternary-color);
+    color: var(--white-color);
     max-width:580px;
     line-height: 3rem;
     padding-bottom:2rem;
 }
 
-.hero-subtitle span{
-    color: var(--white-color);
-}
+
 
 .hero-description{
     font-size: var(--ft-nor-size);
