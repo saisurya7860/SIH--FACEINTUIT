@@ -76,13 +76,19 @@ body{
 /* Footer */
 
 footer{
-    background: #121212;
+    background:var(--black-color);
     color: var(--white-color);
+    border-top: 0.5px solid var(--para-color);
 }
 
 .footer-logo{
     width:1.7rem;
     height:2rem;
+}
+
+#ft-row{
+    max-width:1200px;
+    margin: 0 auto;
 }
 
 #web-logo-div{
@@ -102,7 +108,7 @@ footer{
 
 .logo-des{
     font-size: var(--ft-sm-size);
-    padding:1.5rem 0;
+    padding:1rem 0;
     max-width:200px;
 }
 
@@ -139,5 +145,9 @@ footer{
 }
 
 .copy-right span{
-    color:var(--ternary-color); 
+    background: linear-gradient(180deg, rgb(24, 168, 232), rgb(28, 128, 239), rgb(37, 99, 235), rgb(36, 64, 153)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; 
 }
