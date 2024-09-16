@@ -85,6 +85,10 @@ body{
     color:var(--white-color);
     cursor: pointer;
 }
+.web-logo{
+    width:1.8rem;
+    height:2rem;
+}
 
 #logo span{
     color:var(--ternary-color);
