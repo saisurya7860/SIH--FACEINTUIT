@@ -76,6 +76,20 @@ body{
     padding: 2rem 0;
 }
 
+#nav-pg-link{
+    margin: 1rem 0;
+}
+
+#nav-pg-link a{
+    color:var(--white-color);
+    text-decoration: none;
+    font-size: var(--ft-sm-size);
+}
+
+#nav-pg-link a:hover{
+    color:var(--hover-color);
+}
+
 .total-div-card{
     display: flex;
     flex-wrap: wrap;
