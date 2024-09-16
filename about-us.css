@@ -92,6 +92,13 @@ body{
     border-radius: 7px;
 }
 
+#card:hover{
+    transform: translateY(10px);
+    box-shadow: 1px 1px 15px rgba(78, 144, 242, 0.875);
+    cursor: pointer;
+}
+
+
 #card-img{
     width:18rem;
     height:17rem;
