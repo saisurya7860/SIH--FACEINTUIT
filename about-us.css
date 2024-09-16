@@ -83,7 +83,7 @@ body{
 #nav-pg-link a{
     color:var(--white-color);
     text-decoration: none;
-    font-size: var(--ft-sm-size);
+    font-size: var(--ft-nor-size);
 }
 
 #nav-pg-link a:hover{
