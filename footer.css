@@ -83,13 +83,17 @@ footer{
 }
 
 .footer-logo{
-    width:1.7rem;
+    width:1.8rem;
     height:2rem;
 }
 
 #ft-row{
     max-width:1200px;
     margin: 0 auto;
+}
+
+.ft-logo-div{
+    padding: 0 0 0.6rem 0;
 }
 
 #web-logo-div{
