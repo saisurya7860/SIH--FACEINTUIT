@@ -40,6 +40,7 @@ body{
     --ft-sm-size:1rem;
     --ft-nor-size:1.2rem;
     --ft-md-size:1.5rem;
+    --ft-lmd-size:2rem;
     --ft-lg-size:2.2rem;
     --ft-xlg-size:3rem;
     /* Font- weight */
@@ -97,7 +98,7 @@ footer{
 }
 
 .web-title{
-    font-size: var(--ft-lg-size);
+    font-size: var(--ft-lmd-size);
     font-weight: var(--ft-md-wt);
 }
 
@@ -114,7 +115,6 @@ footer{
 
 .col-2-title{
     font-size: var(--ft-md-size);
-    
 }
 
 .underline{
@@ -126,6 +126,7 @@ footer{
 .ft-links{
     font-size: var(--ft-sm-size);
     line-height: 30px;
+    padding-top:0.5rem;
 }
 
 .next-page:hover{
