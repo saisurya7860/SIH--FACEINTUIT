@@ -71,7 +71,7 @@ body{
 
 .about-us-title{
     color: var(--ternary-color);
-    font-size: var(--ft-lg-size);
+    font-size: var(--ft-xlg-size);
     font-weight: var(--ft-md-wt);
     padding: 2rem 0;
 }
@@ -97,13 +97,13 @@ body{
     align-items: center;
     flex-basis: max-content max-content max-content;
     gap: 3rem;
-    
 }
 
 #card{
     width:18rem;
     background-color: rgb(31, 31, 31,0.8);
     border-radius: 7px;
+    transition:transform ease-in-out 1s;
 }
 
 #card:hover{
