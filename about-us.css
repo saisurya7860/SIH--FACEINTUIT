@@ -103,7 +103,7 @@ body{
     width:18rem;
     background-color: rgb(31, 31, 31,0.8);
     border-radius: 7px;
-    transition:transform ease-in-out 1s;
+    transition:transform ease-in-out 0.5s;
 }
 
 #card:hover{
