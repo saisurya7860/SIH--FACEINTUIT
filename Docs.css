@@ -99,14 +99,15 @@ body{
 
 /* video css */
 .docs-video{
-    aspect-ratio: 9/10;
-    background-color: #fff;
+    width:100%;
+    height: 100%;
 }
 
 .video-con{
-    margin-top:5rem;
-    border: 2px dashed var(--para-color);
+    border: 2px solid var(--primary-color);
     padding: 1rem;
+    aspect-ratio:16/9;
+    width:60%;
 }
 
 .video-def{
@@ -116,9 +117,9 @@ body{
 
 
 @media (max-width:768px){
-    .docs-video{
-        aspect-ratio: 12/11;
-        width: 100%;
+    .video-con{
+        aspect-ratio:16/9;
+        width:100%;
     }
 }
 
@@ -128,10 +129,8 @@ body{
         font-weight: var(--ft-md-wt);
     }
 
-    .docs-video{
-        aspect-ratio: 10/9;
-        width: 100%;
-    }
+  
+
 }
 
 @media (max-width:375px){
@@ -139,8 +138,6 @@ body{
         font-size: var(--ft-md-size);
         font-weight: var(--ft-md-wt);
     }
-    .docs-video{
-        aspect-ratio: 10/9;
-        width: 100%;
-    }
+
+
 }
